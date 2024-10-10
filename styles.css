@@ -1,43 +1,61 @@
 /* styles.css */
 
-/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light gray background */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    color: #333; /* Dark gray text for better readability */
     line-height: 1.6;
-    background-color: black;
-    color: white;
 }
 
-h1, h2, h3 {
+.navbar {
+    background-color: #ffffff; /* White background for the navbar */
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+    color: #333 !important; /* Dark text for the links */
+    text-decoration: none;
     font-weight: bold;
 }
 
-/* Custom Styling for Navbar */
-.navbar-brand {
-    font-size: 1.5em;
+.navbar a:hover {
+    color: #007bff !important; /* Blue color on hover */
 }
 
-.navbar-nav .nav-link {
-    color: lightgray;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
-.navbar-nav .nav-link:hover {
-    color: white;
+h2, h3 {
+    color: #333; /* Dark color for headings */
 }
 
-/* Team Section Styles */
-.team-member {
-    margin-bottom: 2em;
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-/* Optimize Responsive Images */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
-/* Footer */
-footer {
-    background-color: #222;
-    padding: 1em;
+ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd; /* Separate list items with a light border */
+}
+
+ul li:last-child {
+    border-bottom: none;
+}
+
+a {
+    color: #007bff; /* Blue links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
 }
