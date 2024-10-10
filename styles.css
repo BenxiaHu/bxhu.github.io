@@ -1,43 +1,62 @@
-/* Updated styles for narrowing the unused space on the left and right sides */
-
 body {
     background-color: #f5f5f5;
-    color: #111; /* Updated font color for better readability */
+    color: #111;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-.container {
-    max-width: 1000px;  /* Increased max-width for better spacing */
-    margin: 0 auto;    /* Center the container horizontally */
-    padding: 20px;
-}
-
 .navbar {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
-    padding: 10px;
+    padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
-.navbar a {
-    color: #111; /* Updated font color */
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
+.navbar-container {
+    display: flex;
+    align-items: center;
 }
 
-.navbar a:hover {
-    color: #0056b3; /* Updated hover color to be less bright */
+.navbar-brand {
+    margin-right: 20px;
+}
+
+.navbar-brand a {
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links a {
+    color: #111;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-links a:hover {
+    color: #0056b3;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .card {
     background-color: #ffffff;
-    border-radius: 0; /* Removed border radius */
-    box-shadow: none; /* Removed box shadow */
+    border-radius: 0;
+    box-shadow: none;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -50,37 +69,14 @@ body {
     font-size: 14px;
 }
 
-/* Adjust heading styles for better readability */
-h2 {
-    color: #111; /* Updated color for headings */
-    font-size: 1.75em;
-    margin-bottom: 10px;
-}
-
-h3 {
-    color: #333;
-    font-size: 1.25em;
-    margin-top: 20px;
-}
-
-p {
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-ul {
-    list-style-type: disc;
-    margin-left: 20px;
-    line-height: 1.6;
-}
-
 /* Add responsiveness */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
     }
-    .navbar a {
-        display: block;
+
+    .navbar-links a {
         margin: 5px 0;
     }
 }
