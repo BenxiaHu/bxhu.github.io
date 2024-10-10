@@ -1,48 +1,53 @@
+/* Updated styles for consistent branding */
+
 body {
     background-color: #f5f5f5;
-    color: #111;
+    color: #111; /* Updated font color for better readability */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+.container {
+    max-width: 1000px;  /* Increased max-width for better spacing */
+    margin: 0 auto;    /* Center the container horizontally */
+    padding: 20px;
+}
+
 .navbar {
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
-    padding: 10px 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
 
-.navbar a {
-    color: #111;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5em; /* Consistent font size for "Benxia Hu" */
-    margin-right: 20px;
+.navbar .navbar-brand {
+    margin-right: auto;
 }
 
-.navbar .navbar-links a {
-    font-size: 1em; /* Consistent size for all other links */
-    margin-left: 15px;
+.navbar a {
+    color: #111; /* Updated font color */
+    margin: 0 15px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
+}
+
+.navbar-brand a {
+    font-size: 1.5em;  /* Set consistent font size for the brand */
+    font-weight: bold;
+    color: #111; /* Set color for consistency */
+    text-decoration: none;
 }
 
 .navbar a:hover {
-    color: #0056b3;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
+    color: #0056b3; /* Updated hover color to be less bright */
 }
 
 .card {
     background-color: #ffffff;
-    border-radius: 0;
-    box-shadow: none;
+    border-radius: 0; /* Removed border radius */
+    box-shadow: none; /* Removed box shadow */
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -55,14 +60,37 @@ body {
     font-size: 14px;
 }
 
+/* Adjust heading styles for better readability */
+h2 {
+    color: #111; /* Updated color for headings */
+    font-size: 1.75em;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.25em;
+    margin-top: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
 /* Add responsiveness */
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
+    .container {
+        padding: 10px;
     }
-
-    .navbar-links a {
+    .navbar a {
+        display: block;
         margin: 5px 0;
     }
 }
