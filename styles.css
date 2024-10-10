@@ -1,70 +1,98 @@
-/* General Body Styles */
+/* Updated styles.css */
 body {
-    background-color: #ffffff; /* White background for the entire website */
-    font-family: 'Roboto', sans-serif; /* Modern and clean font */
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
     color: #333;
-    line-height: 1.6;
     margin: 0;
+    padding: 0;
 }
 
-/* Navigation Bar */
 .navbar {
-    background-color: #ffffff; /* White background for navbar */
-    padding: 20px 30px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for the navbar */
-    z-index: 999;
 }
 
 .navbar a {
-    color: #333; /* Dark gray text for navbar links */
+    color: #333;
     text-decoration: none;
+    margin-right: 20px;
     font-weight: 500;
-    margin-left: 20px;
-    transition: color 0.3s;
 }
 
 .navbar a:hover {
-    color: #007bff; /* Blue color on hover */
+    color: #007BFF;
 }
 
-/* Container Styling */
+.navbar-brand a {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 .container {
-    max-width: 1000px;
-    margin: 120px auto; /* Add margin to avoid overlap with navbar */
-    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-/* Section Styling */
 .card {
     background-color: #ffffff;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 30px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
 }
 
 .card h2 {
+    color: #007BFF;
+}
+
+.section-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-card {
+    flex: 1;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.section-card:hover {
+    transform: translateY(-5px);
+}
+
+.section-card h3 {
     margin-top: 0;
-    color: #007bff; /* Blue headings */
 }
 
-.card p {
-    color: #555; /* Lighter gray for paragraph text */
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
-/* Footer Styling */
+.button:hover {
+    background-color: #0056b3;
+}
+
 .footer {
     text-align: center;
-    padding: 20px 0;
-    background-color: #f1f1f1; /* Light gray for footer */
+    padding: 2rem;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
     color: #333;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
