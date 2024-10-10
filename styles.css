@@ -1,16 +1,16 @@
-/* Updated styles for consistent branding across all pages */
+/* Updated styles for keeping the navigation links aligned to the left and consistent */
 
 body {
     background-color: #f5f5f5;
-    color: #111; /* Font color for better readability */
+    color: #111;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 1000px;  /* Increased max-width for better spacing */
-    margin: 0 auto;    /* Center the container horizontally */
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -19,33 +19,32 @@ body {
     border-bottom: 1px solid #e5e5e5;
     padding: 10px;
     display: flex;
+    justify-content: start;
     align-items: center;
 }
 
-.navbar .navbar-brand {
-    font-size: 2em; /* Set consistent font size for the brand */
-    font-weight: bold;
-    color: #111; /* Set color for consistency */
-    margin-right: 20px;
-    text-decoration: none;
-}
-
 .navbar a {
-    color: #111; /* Updated font color */
+    color: #111;
     margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1em; /* Make sure link font size is consistent */
+    font-size: 18px;
 }
 
 .navbar a:hover {
-    color: #0056b3; /* Updated hover color to be less bright */
+    color: #0056b3;
+}
+
+.navbar-brand {
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .card {
     background-color: #ffffff;
-    border-radius: 0; /* Removed border radius */
-    box-shadow: none; /* Removed box shadow */
+    border-radius: 0;
+    box-shadow: none;
     padding: 20px;
     margin-bottom: 20px;
 }
@@ -58,9 +57,8 @@ body {
     font-size: 14px;
 }
 
-/* Adjust heading styles for better readability */
 h2 {
-    color: #111; /* Updated color for headings */
+    color: #111;
     font-size: 1.75em;
     margin-bottom: 10px;
 }
@@ -82,17 +80,21 @@ ul {
     line-height: 1.6;
 }
 
-/* Add responsiveness */
 @media (max-width: 768px) {
     .container {
         padding: 10px;
     }
+
     .navbar {
-        flex-direction: column; /* Stack the nav links on smaller screens */
-        align-items: flex-start;
+        flex-direction: column;
+        align-items: start;
     }
+
     .navbar a {
-        display: block;
         margin: 5px 0;
+    }
+
+    .navbar-brand {
+        margin-bottom: 10px;
     }
 }
